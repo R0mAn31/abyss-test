@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/%3CRepository-name%3E/static/css/main.6c09d5c4.css",
+    "main.js": "/%3CRepository-name%3E/static/js/main.cfdf8351.js",
+    "index.html": "/%3CRepository-name%3E/index.html",
+    "main.6c09d5c4.css.map": "/%3CRepository-name%3E/static/css/main.6c09d5c4.css.map",
+    "main.cfdf8351.js.map": "/%3CRepository-name%3E/static/js/main.cfdf8351.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c09d5c4.css",
+    "static/js/main.cfdf8351.js"
+  ]
+}
