@@ -1,38 +1,101 @@
 .App {
   text-align: center;
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  padding: 8px 4px;
+  height: calc(95vh - 6px);
+  width: 100%;
+  position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: antiquewhite;
+}
+.draggable-elem {
+  padding: 8px 4px;
+  position: absolute;
+  border-radius: 0.3em;
+  cursor: move;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+.category-add{
+  padding: 18px 14px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
+  background-color: dimgray;
+  border: 2px dashed black;
+  font-size: 1.6em;
+  width: 140px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3em;
+}
+.plus{
+  border-radius: 999px;
+  background: gray !important;
+  width: 32px;
+  height: 32px;
+  font-size: large;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.app-wrapper{
+  background: gray !important;
+  width: 100%;
+  height: 100px;
+  padding: 0 !important;
+}
+.wrapper-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.subcategory{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 140px;
+  height: 30px;
+  background-color: beige;
+  border-radius: 0.3em;
+  border: 1px solid #ccc;
+  padding: "10px 10px";
+}
+.subcategory-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.scaling-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fade-in {
+  animation: fadeIn 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
